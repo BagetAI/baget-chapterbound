@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1B4332;
+  --secondary: #F4F1DE;
+  --accent: #E07A5F;
+  --neutral: #293241;
+}
+
+body {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-lora), serif;
+}
+
+.bg-primary { background-color: var(--primary); }
+.text-primary { color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.text-secondary { color: var(--secondary); }
+.bg-accent { background-color: var(--accent); }
+.text-accent { color: var(--accent); }
+.bg-neutral { background-color: var(--neutral); }
+.text-neutral { color: var(--neutral); }
+
+.btn-primary {
+  @apply bg-[#1B4332] text-white px-8 py-4 rounded font-bold transition-all hover:bg-[#143225] disabled:opacity-50;
+}
